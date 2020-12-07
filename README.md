@@ -1,3 +1,27 @@
+# Javascript
+
+Check if the script is run inside iframe
+```markdown
+<script> 
+function iniFrame() { 
+    if ( window.location !== window.parent.location ) 
+    { 
+      
+        // The page is in an iFrames 
+        document.write("The page is in an iFrame"); 
+    }  
+    else { 
+          
+        // The page is not in an iFrame 
+        document.write("The page is not in an iFrame"); 
+    } 
+} 
+  
+// Calling iniFrame function 
+iniFrame(); 
+</script> 
+```
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Larzs/code/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
