@@ -11,7 +11,7 @@ Katrai php versijai izveidot savu mapi iekš htdocs.
 
 3. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
 
-```markdown
+```
 ScriptAlias /php5640 "C:/xampp/php5640"
 Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
 <Directory "C:/xampp/php5640">
@@ -36,7 +36,7 @@ Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
 ## Virtual-hosts piemērs iekš httpd-vhosts.conf
 
 PHP 7-8
-```markdown
+```
 <VirtualHost *:80>
     ServerAdmin admin@web.larzs.lv
     DocumentRoot "C:\xampp\htdocs\env8012\web"
