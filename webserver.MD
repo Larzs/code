@@ -30,3 +30,21 @@ Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
 ```
 4. Katrai PHP versijai ir jāizveido php.ini konfigurācijas fails no php.ini-development vai no php.ini-production
 5. Iekš php.ini noņemt komentu no ``extension_dir = "ext"`` rindas.
+
+## Virtual-hosts piemērs iekš httpd-vhosts.conf
+
+PHP 7-8
+```
+<VirtualHost *:80>
+    ServerAdmin admin@web.larzs.lv
+    DocumentRoot "C:\xampp\htdocs\env8012\web"
+    ServerName web.larzs.lv
+    ErrorLog "logs/web.larzs.lv-error.log"
+    CustomLog "logs/web.larzs.lv-access.log" common
+    <Directory "C:\xampp\htdocs\env8012\web>
+        Options -Indexes
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+```
