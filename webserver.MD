@@ -2,7 +2,7 @@
 
 ## Vairākas PHP versijas
 
-Katrai php versijai izveidot savu mapi iekš htdocs mapē.
+Katrai php versijai izveidot savu mapi iekš htdocs.
 
 0. Ņemt x64 bitu, Non-Thread Safe versijas. https://windows.php.net/downloads/releases/archives/
 
@@ -10,7 +10,7 @@ Katrai php versijai izveidot savu mapi iekš htdocs mapē.
 ``#SetEnv PHPRC "\\xampp\\php" ``
 
 2. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
-``
+```
 ScriptAlias /php5640 "C:/xampp/php5640"
 Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
 <Directory "C:/xampp/php5640">
@@ -27,6 +27,6 @@ Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
         SetHandler application/x-httpd-php5640-cgi
     </FilesMatch>
 </Directory>
-``
+```
 3. Katrai PHP versijai ir jāizveido php.ini konfigurācijas fails no php.ini-development vai no php.ini-production
 4. Iekš php.ini izkomentēt ``extension_dir = "ext"``.
