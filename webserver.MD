@@ -10,6 +10,7 @@ Katrai php versijai izveidot savu mapi iekš htdocs.
 `SetEnv PHPRC "\\xampp\\php"`
 
 3. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
+4. 
 ```markdown
 ScriptAlias /php5640 "C:/xampp/php5640"
 Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
@@ -28,8 +29,9 @@ Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
     </FilesMatch>
 </Directory>
 ```
+
 4. Katrai PHP versijai ir jāizveido php.ini konfigurācijas fails no php.ini-development vai no php.ini-production
-5. Iekš php.ini noņemt komentu no ``extension_dir = "ext"`` rindas.
+5. Iekš php.ini noņemt komentu no `extension_dir = "ext"` rindas.
 
 ## Virtual-hosts piemērs iekš httpd-vhosts.conf
 
