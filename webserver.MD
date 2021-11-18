@@ -1,13 +1,13 @@
 # XAMPP
 
-## Vairākas PHP versijas
+## Vairākas PHP versijas  
 
 Katrai php versijai izveidot savu mapi iekš htdocs.
 
 1. Ņemt x64 bitu, Non-Thread Safe versijas. https://windows.php.net/downloads/releases/archives/
 
 2. Izkomentēt rindu no httpd-xampp.conf
-``#SetEnv PHPRC "\\xampp\\php" ``
+``SetEnv PHPRC "\\xampp\\php" ``
 
 3. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
 ```
