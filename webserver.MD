@@ -7,10 +7,10 @@ Katrai php versijai izveidot savu mapi iekš htdocs.
 1. Ņemt x64 bitu, Non-Thread Safe versijas. https://windows.php.net/downloads/releases/archives/
 
 2. Izkomentēt rindu no httpd-xampp.conf
-``SetEnv PHPRC "\\xampp\\php" ``
+`SetEnv PHPRC "\\xampp\\php"`
 
 3. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
-```
+`
 ScriptAlias /php5640 "C:/xampp/php5640"
 Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
 <Directory "C:/xampp/php5640">
@@ -27,14 +27,14 @@ Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
         SetHandler application/x-httpd-php5640-cgi
     </FilesMatch>
 </Directory>
-```
+`
 4. Katrai PHP versijai ir jāizveido php.ini konfigurācijas fails no php.ini-development vai no php.ini-production
 5. Iekš php.ini noņemt komentu no ``extension_dir = "ext"`` rindas.
 
 ## Virtual-hosts piemērs iekš httpd-vhosts.conf
 
 PHP 7-8
-```
+`
 <VirtualHost *:80>
     ServerAdmin admin@web.larzs.lv
     DocumentRoot "C:\xampp\htdocs\env8012\web"
@@ -47,4 +47,4 @@ PHP 7-8
         Require all granted
     </Directory>
 </VirtualHost>
-```
+`
