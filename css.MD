@@ -1,5 +1,20 @@
 ## CSS
 
+### @media prefers-color-scheme
+
+```
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        
+        --brand: var(--brand-dark);
+        --text: var(--text-dark);
+        --bg1: var(--bg1-dark);
+        --surface1: var(--surface1-dark);
+    }
+}
+```
+
 ### Loader
 
 <style>
