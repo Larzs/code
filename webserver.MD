@@ -10,7 +10,7 @@ Katrai php versijai izveidot savu mapi iekš htdocs.
 `SetEnv PHPRC "\\xampp\\php"`
 
 3. Par katru versiju pielikt konfigurāciju httpd-xampp.conf faila apakšā.
-4. 
+
 ```markdown
 ScriptAlias /php5640 "C:/xampp/php5640"
 Action application/x-httpd-php5640-cgi /php5640/php-cgi.exe
