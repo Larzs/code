@@ -68,7 +68,7 @@ console.log({ width, height, length });
 
 ## Misc
 
-### Decluteter assignement
+### Declutter assignment
 ```markdown
 x, y = '15'
 y, z = '34'
