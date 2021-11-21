@@ -1,6 +1,6 @@
 # Javascript
 
-## Host and iframe comunication
+## Host and iframe communication
 
 Send the message from the iframe:
 ```markdown
