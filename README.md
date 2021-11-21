@@ -52,3 +52,16 @@ function iniFrame() {
 // Calling iniFrame function 
 iniFrame(); 
 ```
+
+## Debuging
+
+Wrap variables in curly brackets to better see which value belongs to which variable.
+
+```markdown
+let width = 100;
+let height = 50;
+let length = 75;
+
+console.log({ width, height, length });
+{ width: 100, height: 50, length: 75 }
+```
