@@ -65,3 +65,14 @@ let length = 75;
 console.log({ width, height, length });
 { width: 100, height: 50, length: 75 }
 ```
+
+## Misc
+
+### Decluteter assignement
+```markdown
+x, y = '15'
+y, z = '34'
+
+print(x + y + z)
+134
+```
