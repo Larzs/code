@@ -1,5 +1,20 @@
 # Javascript
 
+## Host and iframe comunication
+
+Send the message from the iframe:
+```markdown
+window.top.postMessage('reply', '*');
+```
+And listen to it in the parent:
+```markdown
+window.onmessage = function(event) {
+    if (event.data == 'reply') {
+        console.log('Reply received!');
+    }
+}
+```
+
 ## Timeout destructor as callback
 
 ```markdown
