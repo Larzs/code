@@ -1,8 +1,25 @@
 # Javascript
 
-Check if the script is run inside iframe
+## Timeout destructor as callback
+
 ```markdown
-<script> 
+function animate(div) {
+    let counter = 0;
+    const interval = setInterval(function () {
+        div.innerHTML = "Uploading" + ".".repeat(counter++ % 4)
+    }, 500)
+    return () =>
+        clearInterval(interval)
+}
+
+const stopAnimating = animate(document.getElementById("id"));
+
+doSomeThingAsync().then(() => stopAnimating());
+```
+
+## Check if the script is run inside iframe
+
+```markdown
 function iniFrame() { 
     if ( window.location !== window.parent.location ) 
     { 
@@ -19,7 +36,6 @@ function iniFrame() {
   
 // Calling iniFrame function 
 iniFrame(); 
-</script> 
 ```
 
 ## Welcome to GitHub Pages
