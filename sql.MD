@@ -10,3 +10,10 @@ SELECT * FROM [serveris2].[db].[shēma].[tabula]
 
 SET IDENTITY_INSERT [serveris1].[db].[shēma].[tabula] OFF
 ```
+
+## Mariadb
+
+Kāda versija?
+```
+select @@version as version;
+```
