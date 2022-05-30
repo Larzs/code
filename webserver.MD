@@ -50,3 +50,16 @@ PHP 7-8
     </Directory>
 </VirtualHost>
 ```
+
+## MySQL failu korupcijas post fix
+
+* Stop the XAMPP server, MySQL and Apache
+* Create a backup of the “/xampp/mysql/data” folder using a compression software
+* Rename the “/xampp/mysql/data” folder to “/xampp/mysql/data-old”
+* Create a new folder and name it “/xampp/mysql/data”
+* Copy all folders from the “/xampp/mysql/backup” and paste it to the “/xampp/mysql/data” folder, which you have just created
+* Copy all the databases from the “/xampp/mysql/data-old” folder and paste it to the “/xampp/mysql/data” folder
+* Finally copy the “ibdata1” and all of the log files including “ib_logfile0, ib_logfile1 ” from “/xampp/mysql/data-old” and paste it to the “/xampp/mysql/data” folder
+* Start MySQL from the XAMPP control panel
+* Go to phpMyAdmin to check if all the databases are available and running properly
+
