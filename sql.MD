@@ -17,3 +17,8 @@ Kāda versija?
 ```
 select @@version as version;
 ```
+
+Importēt no komandrindas
+```
+"C:\xampp\mysql\bin\mysql.exe" -hlocalhost -uroot database_name < db_02022022.sql
+```
