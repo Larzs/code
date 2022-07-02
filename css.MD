@@ -91,3 +91,31 @@
     <div class="spinner__slice"></div>
     <div class="spinner__slice"></div>
 </div>
+
+### Box Shadow
+
+<style>
+	.gradient-shadow:before {
+		content:  '';
+		position:  absolute;
+		inset: 0;
+		background: red;
+		z-index: -1;
+		border-radius: inherit;
+		transform: translateY(15%) scale(0.85);
+		filter:  blur(30px) brightness(1.5);
+		background: var(--gradient);
+	}
+
+	.gradient-shadow {
+	    --gradient: linear-gradient(to bottom right, lime, cyan);
+
+	    background:  var(--gradient);
+	    inline-size: 75vmin;
+	    aspect-ratio: 4/3;
+	    border-radius: 1rem;
+	    position: relative;
+    }
+	</style>
+
+<div class="gradient-shadow"></div>
